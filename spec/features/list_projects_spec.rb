@@ -1,5 +1,3 @@
-require "rails_helper"
-
 describe "Viewing the list of projects" do
   it "shows three projects" do
     project1 = Project.create(name: "Help Save Theresa C Gusek's Life",
