@@ -45,7 +45,7 @@ describe "Viewing the list of projects" do
 
     expect(page).to have_text(project1.description[0..10])
     expect(page).to have_text("$100,000.00")
-    expect(page).to have_text("9 days remaining")
+    expect(page).to have_text("9 days remainingh ")
     expect(page).to have_text(project1.website)
 
   end
