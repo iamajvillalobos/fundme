@@ -47,6 +47,7 @@ describe "Viewing the list of projects" do
     expect(page).to have_text("$100,000.00")
     expect(page).to have_text("9 days remaining")
     expect(page).to have_text(project1.website)
+    expect(page).to have_selector("img[src$='#{project1.image_file_name}']")
   end
 
   it "does not show projects that is no longer accepting pledges" do

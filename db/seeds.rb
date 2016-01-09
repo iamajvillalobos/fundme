@@ -1,27 +1,35 @@
 Project.delete_all
-
 Project.create!([
   {
-    name: "A Gay Ol' Time",
-    description: "An anthology of illustrated portraits and short biographical poems of American LGBTQIA and Two-Spirit people born in the 1800s.",
-    target_pledge_amount: 2950,
-    pledging_ends_on: 3.days.from_now,
-    website: "https://www.kickstarter.com/projects/1056477701/a-gay-ol-time?ref=discover_potd"
+    name: "New Hexoskin Smart: World's Leading Smart Shirt",
+    description: "The best smart shirt on the market now connects
+    to apps like Runkeeper & Strava!",
+    "target_pledge_amount": 50000,
+    "pledging_ends_on": 46.days.from_now,
+    "website": "https://www.indiegogo.com/projects/new-hexoskin-smart-world-s-leading-smart-shirt#/",
+    "team_members": "Hexoskin Wearable Body Metrics, Francois Gauthier,
+    Teneisha Collins, Julie St-Jean, Thomas Merlin",
+    "image_file_name": "hexo_skin.png"
+  },
+  {
+    name: "mJoose: More Bars in More Places, 2x Battery Life",
+    description: "The first smartphone case that improves cell signals by 100x,
+    2x battery life, and 2x faster charge!",
+    "target_pledge_amount": 15000,
+    "pledging_ends_on": 5.days.from_now,
+    "website": "https://www.indiegogo.com/projects/mjoose-more-bars-in-more-places-2x-battery-life#/",
+    "team_members": "Daniel Ash, Ruth Doering, Christine Schumacher",
+    "image_file_name": "mjoose.png"
+  },
+  {
+    name: "Hydrate Mate",
+    description: "The Electronic Fuel Gauge For Your Hydration Pack. Never
+    run out of water again",
+    "target_pledge_amount": 17424.60,
+    "pledging_ends_on": 45.days.from_now,
+    "website": "https://www.indiegogo.com/projects/hydrate-mate#/",
+    "team_members": "Andrew Saville",
+    "image_file_name": "hydrate_master.png"
   },
 
-  {
-    name: "Revelation Ale Works - Bringing craft beer to Hallock!",
-    description: "Be a Founder of our Northwest Minnesota craft brewery, Revelation Ale Works, launching in Hallock mid-2016!",
-    target_pledge_amount: 15000,
-    pledging_ends_on: 4.days.ago,
-    website: "https://www.kickstarter.com/projects/revales/revelation-ale-works-bringing-craft-beer-to-halloc?ref=recommended"
-  },
-
-  {
-    name: "Revols - Premium Quick Custom-Fit Wireless Earphones",
-    description: "Bluetooth earphones with tips that mold to the unique shape of your ears in 60 seconds. Unparalleled fit, comfort, sound and features.",
-    target_pledge_amount: 100000,
-    pledging_ends_on: 15.days.from_now,
-    website: "https://www.kickstarter.com/projects/revols/revols-premium-quick-custom-fit-wireless-earphones?ref=popular"
-  }
 ])

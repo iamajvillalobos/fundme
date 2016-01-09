@@ -9,6 +9,8 @@ describe "Creating a new project" do
     fill_in 'Target pledge amount', with: '50000'
     fill_in 'Pledging ends on', with: (Time.now + 1).to_s
     fill_in 'Website', with: 'http://example.com'
+    fill_in 'Team members', with: 'team members'
+    fill_in "Image file name", with: "project.png"
 
     click_button 'Create Project'
     expect(current_path).to eq(project_path(Project.last))
