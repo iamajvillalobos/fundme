@@ -47,6 +47,13 @@ describe "Viewing the list of projects" do
     expect(page).to have_text("$100,000.00")
     expect(page).to have_text("9 days remaining")
     expect(page).to have_text(project1.website)
+  end
 
+  it "does not show projects that is no longer accepting pledges" do
+    project = Project.create(project_attributes(pledging_ends_on: 3.days.ago))
+
+    visit projects_path
+
+    expect(page).to_not have_text(project.name)
   end
 end

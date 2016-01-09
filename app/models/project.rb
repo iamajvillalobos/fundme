@@ -6,4 +6,8 @@ class Project < ActiveRecord::Base
       false
     end
   end
+
+  def self.ongoing
+    where('pledging_ends_on >= ?', Time.now)
+  end
 end
